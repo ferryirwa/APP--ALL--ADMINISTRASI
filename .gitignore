@@ -1,0 +1,48 @@
+# ============================================
+# Git Ignore — Aplikasi Administrasi
+# ============================================
+
+# Folder uploads user (jangan commit file user)
+admins/*/uploads/*
+!admins/*/uploads/.htaccess
+!admins/*/uploads/.gitkeep
+
+# File konfigurasi lokal (kalau ada)
+.env
+.env.local
+*.local.php
+config/local.php
+
+# Folder library (kalau pakai composer/npm)
+/vendor/
+/node_modules/
+composer.lock
+package-lock.json
+
+# File log
+*.log
+logs/
+*.tmp
+
+# File sistem operasi
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# File editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*~
+
+# File backup
+*.bak
+*.backup
+*.old
+*.sql.gz
+
+# Cache
+.cache/
+*.cache
